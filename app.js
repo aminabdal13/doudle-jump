@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function jump() {
     IsJumping = true;
     clearInterval(DownTimerId);
-    UpTimerId = setInterval(function () {
+    UpTimerId = setInterval(() => {
       doolerBottomstate += 10;
       dooler.style.bottom = doolerBottomstate + "px";
       if (doolerBottomstate > StartPoint + 200) {
